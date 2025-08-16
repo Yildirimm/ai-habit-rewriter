@@ -1,0 +1,13 @@
+name: ai-habit-rewriter
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - gradio>=5.0.0
+    - transformers>=4.0.0
+    - torch>=1.0.0
+    - fpdf>=1.7.0 

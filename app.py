@@ -56,7 +56,9 @@ with gr.Blocks(css="#wrap{max-width:880px;margin:auto;}") as demo:
 
             # 1- Generate -> fill state + show v1 
             def on_generate(goal):
+                print(f"DEBUG: Goal received: '{goal}'")
                 versions = generate_variations(goal)
+                print(f"DEBUG: Versions returned: {versions}")
                 return versions, 0, versions[0] if versions else "No output generated"
             
             gen_btn.click(on_generate, inputs=[goal], outputs=[version_state, selected_idx, output_box])
