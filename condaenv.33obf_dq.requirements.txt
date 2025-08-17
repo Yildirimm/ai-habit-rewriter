@@ -1,0 +1,4 @@
+gradio
+transformers>=4.0.0
+torch>=1.0.0
+fpdf>=1.7.0

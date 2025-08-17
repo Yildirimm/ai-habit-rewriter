@@ -3,7 +3,6 @@ from datetime import datetime
 from fpdf import FPDF
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
-from prompts import SYSTEM_PROMPT, VARIATION_PROMPTS
 
 MODEL_ID = "google/flan-t5-large"
 
